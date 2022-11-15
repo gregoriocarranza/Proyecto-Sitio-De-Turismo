@@ -45,16 +45,10 @@ h6 {
 }
 
 // ------------------------------------Fuentes
-@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 // ------------------------------------
+
 a {
     text-decoration: none;
     color: inherit;
@@ -103,8 +97,13 @@ p {
 }
 
 @include Computer {
+    html {
+        min-height: 100%;
+        position: relative;
+    }
 
     body {
+        margin-bottom: 10%;
         background-color: #855959;
 
         header {
@@ -144,7 +143,6 @@ p {
             }
         }
 
-
         .bannerdiv {
             display: flex;
             flex-direction: column;
@@ -170,6 +168,11 @@ p {
                 height: 2rem;
                 margin: auto;
 
+                h1 {
+                    font-size: 30px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
             }
         }
 
@@ -179,7 +182,7 @@ p {
             justify-content: space-around;
 
             width: 95%;
-            margin: 5rem auto;
+            margin: 5rem auto 0 auto;
 
 
             .Card {
@@ -196,17 +199,19 @@ p {
 
                 border-radius: 1rem;
 
-                .ButtonDiv {
+
+
+                a {
                     display: flex;
+                    background: #2D3648;
+                    border-radius: 6px;
+                    color: white;
 
-                    button {
-                        background: #2D3648;
-                        border-radius: 6px;
-                        color: white;
+                    width: 138px;
+                    height: 48px;
+                    align-items: center;
+                    justify-content: center;
 
-                        width: 138px;
-                        height: 48px;
-                    }
                 }
 
                 .imgDiv {
@@ -275,6 +280,39 @@ p {
             }
         }
 
+        .SobreNosotrosDiv {
+
+            margin: auto;
+            width: 90%;
+
+
+            section {
+                margin: 2rem;
+            }
+
+            h3 {
+                font-family: 'Red Hat Mono', monospace;
+                font-weight: bold;
+                font-size: 25px;
+                text-align: start;
+            }
+
+            p {
+                text-align: start;
+                color: #FFFFFF;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                padding: 1rem;
+            }
+
+            .Calificacion {
+                i {
+                    color: yellow;
+                    font-size: 5rem;
+                }
+            }
+        }
+
         footer {
             color: white;
             background-color: #223322;
@@ -286,8 +324,7 @@ p {
             flex-wrap: wrap;
 
             position: absolute;
-
-            // top: 105%;
+            bottom: 0;
             width: 100%;
             // height: 6rem;
 
