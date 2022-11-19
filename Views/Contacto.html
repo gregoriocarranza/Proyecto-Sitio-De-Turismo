@@ -55,9 +55,8 @@
             </div>
         </section>
         <section class="FormSection">
-            <form method="POST" id="noteForm" class="FormUser"
-                action="https://formsubmit.co/68727c6a182fbe5331d81eb3e805e9a6">
-                <input type="hidden" name="_cc" value="another@email.com" />
+            <form method="POST" id="noteForm" class="FormUser" action="">
+                <!-- <input type="hidden" name="_cc" value="another@email.com" /> -->
                 <label htmlFor="name">
                     Nombre completo <span>*</span>
                 </label>
@@ -66,7 +65,7 @@
                     Servicio <span>*</span>
                 </label>
                 <select name="_subject" id="subjet" required>
-                    <option value="-none-" defaultValue>
+                    <option value="">
                         Selecciona un servicio
                     </option>
                     <option value="Consulta sobre Tour por el Ateneo">
@@ -90,14 +89,11 @@
                 <label htmlFor="message">
                     Mensaje <span>*</span>
                 </label>
-                <textarea name="Mensaje" cols="30" rows="10" id="message" placeholder="Minimo 12 caracteres"></textarea>
-                <input type="hidden" name="_template" value="table" />
-                <!-- Aca tiene que ir el redireccionamiento para agradecer por el mail  -->
-                <input type="hidden" name="_next"
-                    value="https://gregoriocarranza.github.io/Proyecto-Sitio-De-Turismo/Assets/html/Thanks.html " />
-
+                <textarea name="Mensaje" cols="30" rows="10" id="message" placeholder="Minimo 12 caracteres"
+                    required></textarea>
+                <input type="hidden" name="_template" id="_template" value="table" />
                 <input type="hidden" name="_captcha" value="false" />
-                <button type="submit">Enviar</button>
+                <button type="submit" id="btnEnviarForm">Enviar</button>
             </form>
         </section>
     </div>
@@ -122,6 +118,8 @@
             </div>
 
         </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../Assets/js/form.js"></script>
         <div class="icons">
             <img src="../Assets/Img/Vectores/Instagram-Positive.png" alt="">
         </div>
