@@ -85,7 +85,20 @@ p {
 
   body {
     margin-bottom: 10%;
-    background-color: #855959;
+    background-color: white;
+  }
+  body .TextosTitulo {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  body .TextosTitulo h2 {
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  body .TextosTitulo p {
+    font-weight: 400;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   body header .HeaderSecction {
     padding: 1rem;
@@ -147,7 +160,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 95%;
-    margin: 5rem auto 0 auto;
+    margin: 1rem auto 0 auto;
   }
   body .CardSecttion .Card {
     padding: 1rem;
@@ -156,7 +169,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    background-color: white;
+    box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
     min-width: 32rem;
     min-height: 35rem;
     border-radius: 1rem;
@@ -420,12 +433,20 @@ p {
     width: 85%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: start;
+    line-height: 25px;
   }
   body footer .icons {
     width: 10%;
     display: flex;
     justify-content: flex-end;
     margin: 1rem;
+  }
+  body footer .icons img {
+    width: 25%;
+    height: auto;
   }
 }
 

@@ -109,7 +109,21 @@ p {
 
     body {
         margin-bottom: 10%;
-        background-color: #855959;
+        background-color: white;
+
+        .TextosTitulo {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            h2 {
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            p{
+                font-weight: 400;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
 
         header {
             .HeaderSecction {
@@ -155,12 +169,16 @@ p {
             position: relative;
             width: 100%;
             margin: 1rem 0 1rem 0;
+            // border-top: 1px solid black;
+            // border-bottom: 1px solid black;
 
             .banderaSides {
                 background-color: lightblue;
                 width: 95%;
                 height: 2rem;
                 margin: auto;
+                // border-left: 1px solid black;
+                // border-right: 1px solid black;
             }
 
             .banderaMiddel {
@@ -172,6 +190,8 @@ p {
                 width: 95%;
                 height: 2rem;
                 margin: auto;
+                // border-left: 1px solid black;
+                // border-right: 1px solid black;
 
                 h1 {
                     font-size: 30px;
@@ -187,7 +207,7 @@ p {
             justify-content: space-around;
 
             width: 95%;
-            margin: 5rem auto 0 auto;
+            margin: 1rem auto 0 auto;
 
 
             .Card {
@@ -198,7 +218,8 @@ p {
                 align-items: flex-start;
                 justify-content: space-around;
 
-                background-color: white;
+                // background-color: white;
+                box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
                 min-width: 32rem;
                 min-height: 35rem;
 
@@ -488,7 +509,7 @@ p {
         .Thanks {
             display: flex;
             flex-direction: column;
-      
+
 
             a {
                 display: flex;
@@ -532,6 +553,10 @@ p {
                 width: 85%;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+                padding: 1rem;
+                text-align: start;
+                line-height: 25px;
             }
 
             .icons {
@@ -539,6 +564,12 @@ p {
                 display: flex;
                 justify-content: flex-end;
                 margin: 1rem;
+
+                img {
+                    width: 25%;
+                    height: auto;
+
+                }
             }
         }
     }

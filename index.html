@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/Css/index.css">
+    <link rel="stylesheet" href="./Assets/Css/carrousel.css">
     <title>The Master Tourism</title>
 </head>
 
@@ -18,6 +19,7 @@
             <div class="HeaderNav">
 
                 <a href="./index.html">Home</a>
+                <a href="./Views/Servicios.html">Servicios</a>
                 <a href="./Views/Sobre_Nosotros.html">Sobre Nosotros</a>
                 <a href="./Views/Contacto.html">Contacto</a>
             </div>
@@ -30,46 +32,50 @@
         </div>
         <div class="banderaSides"></div>
     </div>
-    <section class="CardSecttion">
-        <div class="Card">
-            <h4>Libreria Ateneo</h4>
-            <div class="imgDiv">
-                <img class="imgAteneo" src="./Assets/Img/Ateneo/ateneoBanner.jpg" alt="">
-            </div>
-            <div class="Text">
-                <p>El Ateneo Grand Splendid encabeza varios récords: es la librería más grande de Sudamérica, fue
-                    elegida por el diario británico The Guardian como la segunda mejor librería del mundo y la revista
-                    estadounidense National Geographic la destacó como la más linda. </p>
-            </div>
-            <div class="ButtonDiv"><a href="">Como Llegar</a></div>
-        </div>
-        <div class="Card">
-            <h4>Jardin Japones</h4>
-            <div class="imgDiv">
-                <img class="imgJapones" src="./Assets/Img/JardinJapones/jadinJaponesBaner.JPG" alt="">
-            </div>
-            <div class="Text">
-                <p>Rodeado por los Bosques de Palermo, el Jardín Japonés es un rincón de Buenos Aires que enamora a
-                    quien lo visite. Construido en 1967 en ocasión de la visita del emperador de Japón Akihito y su
-                    esposa Michiko, se trata del jardín de estilo japonés más grande fuera del país nipón. </p>
-            </div>
-            <div class="ButtonDiv"><a href="">Como Llegar</a></div>
-        </div>
-        <div class="Card">
-            <h4>Floralis Genérica</h4>
-            <div class="imgDiv">
-                <img class="imgFlor" src="./Assets/Img/FlorDeHierro/20210925_151555.jpg" alt="">
-            </div>
-            <div class="Text">
-                <p>La escultura de 20 metros de altura que domina la plaza Naciones Unidas fue donada a la Ciudad de
-                    Buenos Aires por su autor, el arquitecto argentino Eduardo Catalano. </p>
-            </div>
-            <div class="ButtonDiv"><a href="">Como Llegar</a></div>
+
+
+    <!-- Carrousel-------------------------------------------------------------->
+
+
+
+    <div class="TextosTitulo">
+        <h2 class="Titulo2">No te pierdas de estas interesantes atracciones!</h2>
+        <p>Consulta nuestra seccion de servicios para enterarte de mass</p>
+    </div>
+
+    <section class="Carrousel">
+        <input type="radio" name="position" checked />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <div id="carousel">
+            <div class="item"><img src="./Assets/Img/CarrouselImg/Ateneo.png" alt="">El Gran Ateneo</div>
+            <div class="item"><img src="./Assets/Img/CarrouselImg/PuertoMadero.png" alt="">Puerto Madero (Img-Fragata
+                Libertad)</div>
+            <div class="item"><img src="./Assets/Img/CarrouselImg/JardinJapones.png" alt="">Jardin Japones</div>
+            <div class="item"><img src="./Assets/Img/CarrouselImg/Floralis_Genérica.png" alt="">Floralis Genérica</div>
+            <div class="item"><img src="./Assets/Img/CarrouselImg/PalacioDeTigre.png" alt=""> Palacio De Tigre</div>
         </div>
     </section>
+    <!-- Fin Carrousel-------------------------------------------------------------->
+
     <footer>
         <div class="Faq">
-            © 2022 - Todos los Derechos Reservados.
+
+            © 2022, Master Tourism . Todos los derechos reservados.
+            <br>
+            <a href="https://www.buenosaires.gob.ar/defensaconsumidor/direccion-general" target="_blank"
+                rel="noopener noreferrer"> Dirección Nacional de Defensa del Consumidor - Defensa de
+                las y los Consumidores. Para reclamos ingrese aquí - Dirección General de Defensa y Protección al
+                Consumidor
+                - Información sobre derecho de arrepentimiento</a>
+            <br>
+            <div class="infoContacto"><a href="tel:+0810 111 4235">Para asesoramiento <b>Telefonico</b> comunicarse con
+                    el +0810 111 4235, </a>
+                <a href="mailto:grcarranza@uade.edu.ar">para asesoramiento <b>Via mail</b> grcarranza@uade.edu.ar</a>
+            </div>
+
         </div>
         <div class="icons">
             <img src="./Assets/Img/Vectores/Instagram-Positive.png" alt="">
