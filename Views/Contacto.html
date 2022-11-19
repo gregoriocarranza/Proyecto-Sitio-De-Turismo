@@ -23,7 +23,84 @@
             </div>
         </section>
     </header>
-    <footer>
+    <div class="Contacto">
+        <section class="Hablemos">
+            <h2>Hablemos</h2>
+            <p class="Text">
+                Nos gustaria poder saber sobre vos! comentanos que te parecen nuestros servicios y si te gustaria que
+                añadieramos mas en el futuro
+            </p>
+            <a href="https://goo.gl/maps/sVR6knWy3CAE37rJA" class="InfoLink">
+                <img src="../Assets/Img/Iconos/MapPinIcon.png" alt="icon" /> El Palomar, Buenos Aires, Argentina
+            </a>
+            <a href="mailto:grcarranza@uade.edu.ar" class="InfoLink">
+                <img src="../Assets/Img/Iconos/MailIcon.png" alt="icon" /> grcarranza@uade.edu.ar
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+549 1130073328&text=Hola, me gustaria tener mas informacion sobre los cursos"
+                class="InfoLink">
+                <img src="../Assets/Img/Iconos/PhoneIcon.png" alt="icon" />
+                +549 1130073328
+            </a>
+            <div class="redesDiv">
+                <a href="https://www.instagram.com/themastertourism/?hl=es-la" target="_blank" class="redesCircle">
+                    <img class="instagram" src="../Assets/Img/Iconos/Instagram.png" alt="" />
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="redesCircle">
+                    <img class="facebook" src="../Assets/Img/Iconos/Facebook.png" alt="" />
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="redesCircle">
+                    <img class="youtube" src="../Assets/Img/Iconos/Youtube.png" alt="" />
+                </a>
+            </div>
+        </section>
+        <section class="FormSection">
+            <form method="POST" id="noteForm" class="FormUser"
+                action="https://formsubmit.co/68727c6a182fbe5331d81eb3e805e9a6">
+                <input type="hidden" name="_cc" value="another@email.com" />
+                <label htmlFor="name">
+                    Nombre completo <span>*</span>
+                </label>
+                <input type="text" name="Nombre" id="name" placeholder="Ej. Lucia Diaz" required />
+                <label htmlFor="subjet">
+                    Servicio <span>*</span>
+                </label>
+                <select name="_subject" id="subjet" required>
+                    <option value="-none-" defaultValue>
+                        Selecciona un servicio
+                    </option>
+                    <option value="Consulta sobre Taller de automaquillaje">
+                        Tour por el Ateneo
+                    </option>
+                    <option value="Consulta sobre Maquillaje social">
+                        Tour por el Jardin Japones
+                    </option>
+                    <option value="Consulta sobre Carrera de maquillaje social inicial">
+                        Visita a la Floralis Genérica, Museo Nacional de Bellas Artes, Paseo alcorta
+                    </option>
+                    <option value="Consulta sobre Extensiones Pestañas">
+                        Guia por Puerto Madero
+                    </option>
+                </select>
+                <label htmlFor="email">
+                    Email <span>*</span>
+                </label>
+                <input type="email" name="Mail" id="email" placeholder="Ej. Lucia@gmail.com" required />
+                <label htmlFor="message">
+                    Mensaje <span>*</span>
+                </label>
+                <textarea name="Mensaje" cols="30" rows="10" id="message" placeholder="Minimo 12 caracteres"></textarea>
+                <input type="hidden" name="_template" value="table" />
+                <!-- Aca tiene que ir el redireccionamiento para agradecer por el mail  -->
+                <input type="hidden" name="_next" value="https://gregoriocarranza.github.io/Proyecto-Sitio-De-Turismo/Assets/html/Thanks.html " />
+
+                <input type="hidden" name="_captcha" value="false" />
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+
+    <footer style="display: none;">
         <div class="Faq">
             © 2022 - Todos los Derechos Reservados.
         </div>

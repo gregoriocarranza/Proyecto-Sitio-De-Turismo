@@ -47,6 +47,11 @@ h6 {
 // ------------------------------------Fuentes
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 // ------------------------------------
 
 a {
@@ -312,6 +317,200 @@ p {
                 }
             }
         }
+
+        // Contacto
+
+        .Contacto {
+            display: flex;
+
+            .Hablemos {
+                background: #d0c5fb;
+                border-radius: 0px 12px 12px 0px;
+                display: flex;
+                width: 50%;
+                height: auto;
+                flex-direction: column;
+            }
+
+            h2 {
+                text-align: start;
+                width: 50%;
+                margin: 151px auto 0 auto;
+                font-family: "Bebas Neue";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 77px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+
+            p {
+                width: 50%;
+                margin: 0 auto 95px auto;
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                color: #000000;
+            }
+
+            .InfoLink {
+                width: 50%;
+                margin: 0 auto 0 auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px;
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                color: #4f4f4f;
+
+                img {
+                    padding: 5px;
+                }
+            }
+
+            .redesDiv {
+                display: flex;
+                width: 50%;
+                margin: 42px auto 0 auto;
+
+                .redesCircle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #f7f7f7;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 16px;
+                    margin: 0px 8px 0px 8px;
+
+                    .Facebook {
+                        height: 16px;
+                        width: 10px;
+                    }
+
+                    .Twiter {
+                        height: 13px;
+                        width: 16px;
+                    }
+
+                    .Instagram {
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 0px;
+                    }
+                }
+
+
+            }
+
+            .FormSection {
+                margin: 160px auto 15rem auto;
+                width: 40%;
+            }
+
+            .FormUser {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin: auto;
+
+                label {
+                    font-family: "DM Sans";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 26px;
+                    letter-spacing: 0.03em;
+                    color: #29303e;
+
+                    span {
+                        color: #ff0048;
+                    }
+                }
+
+                input {
+                    height: 35px;
+                    padding: 5px;
+                    font-family: "Open Sans";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.25px;
+                    color: #707d86;
+                }
+
+                textarea {
+                    height: 166px;
+                    padding: 5px;
+                    font-family: "Open Sans";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.25px;
+                    color: #707d86;
+                    resize: none;
+                }
+
+                select {
+                    height: 35px;
+                    padding: 5px;
+                    font-family: "Open Sans";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.25px;
+                    color: #707d86;
+                }
+
+                button {
+                    margin: 16px 0 0 0;
+                    border: 0px solid #29303e;
+                    height: 35px;
+                    background: #dcfe54;
+                    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        .Thanks {
+            display: flex;
+            flex-direction: column;
+      
+
+            a {
+                display: flex;
+                background: #2D3648;
+                border-radius: 6px;
+                color: white;
+
+                width: 138px;
+                height: 48px;
+                align-items: center;
+                justify-content: center;
+
+                margin-top: 1rem;
+
+            }
+        }
+
+
+
+
+
+
 
         footer {
             color: white;
