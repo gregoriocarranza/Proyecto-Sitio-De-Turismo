@@ -154,6 +154,47 @@ p {
     font-size: 30px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+  body .gridInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas: "informacion informacion EntradaDeBlog" "informacion informacion EntradaDeBlog" "Carrousel Carrousel EntradaDeBlog" "Carrousel Carrousel EntradaDeBlog";
+    padding: 5px;
+    width: 95%;
+    margin: auto;
+  }
+  body .informacion {
+    grid-area: informacion;
+    border: 1px solid black;
+  }
+  body .EntradaDeBlog {
+    grid-area: EntradaDeBlog;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  body .EntradaDeBlog div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin: 1rem auto;
+    border: 1px solid black;
+  }
+  body .EntradaDeBlog div section {
+    padding: 1rem;
+  }
+  body .EntradaDeBlog div section img {
+    width: 5rem;
+    height: auto;
+  }
+  body .Carrousel {
+    grid-area: Carrousel;
+    border: 1px solid black;
+  }
   body .CardSecttion {
     display: flex;
     flex-wrap: wrap;

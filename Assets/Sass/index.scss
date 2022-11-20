@@ -164,6 +164,7 @@ p {
             }
         }
 
+        //    Inicio-------------------------------------------------------
         .bannerdiv {
             display: flex;
             flex-direction: column;
@@ -203,6 +204,66 @@ p {
             }
         }
 
+        .gridInicio {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 1px 1px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "informacion informacion EntradaDeBlog"
+                "informacion informacion EntradaDeBlog"
+                "Carrousel Carrousel EntradaDeBlog"
+                "Carrousel Carrousel EntradaDeBlog";
+            padding: 5px;
+            width: 95%;
+            margin: auto;
+        }
+
+        .informacion {
+            grid-area: informacion;
+            border: 1px solid black;
+
+        }
+
+        .EntradaDeBlog {
+            grid-area: EntradaDeBlog;
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                width: 95%;
+                margin: 1rem auto;
+
+
+                border: 1px solid black;
+
+                section {
+                    padding: 1rem;
+
+                    img {
+                        width: 5rem;
+                        height: auto;
+                    }
+                }
+
+            }
+        }
+
+        .Carrousel {
+            grid-area: Carrousel;
+            border: 1px solid black;
+        }
+
+
+        // Servicios-------------------------------------------------------
         .CardSecttion {
             display: flex;
             flex-wrap: wrap;
@@ -341,7 +402,7 @@ p {
             }
         }
 
-        // Contacto
+        // Contacto-------------------------------------------------------
 
         .Contacto {
             display: flex;
@@ -508,6 +569,7 @@ p {
             }
         }
 
+        // Descripciones-------------------------------------------------------
         .descriptionSecttion {
             display: flex;
             flex-direction: row;
