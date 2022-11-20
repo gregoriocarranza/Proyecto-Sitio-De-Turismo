@@ -16,7 +16,13 @@ btnFOrm.onclick = (e) => {
     FormRegistro()
 }
 
+const variablesA0 = () => {
+    formName.value = ""
+    formEmail.value = ""
+    formSubject.value = ""
+    formMessage.value = ""
 
+}
 
 const FormRegistro = (e) => {
     console.log(formName.value);
@@ -48,22 +54,24 @@ const FormRegistro = (e) => {
         })
 
     } else {
-        fetch("https://formsubmit.co/ajax/grcarranza@uade", {
+        fetch("https://formsubmit.co/ajax/68727c6a182fbe5331d81eb3e805e9a6", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({
-                name: NAME,
-                message: MESSAGE,
-                email: EMAIL,
-                Sobre: SUBJECT,
+                Consula: SUBJECT,
+                Nombre: NAME,
+                Email: EMAIL,
+                Mensaje: MESSAGE,
+
                 _template: TEMPLATE
             })
         })
             .then(response => response.json())
             .then(data => {
+                variablesA0()
                 console.log(data)
                 Swal.fire({
                     position: 'top-end',
@@ -82,7 +90,7 @@ const FormRegistro = (e) => {
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Parece que algo a salido mal con el envio de tu consulta, recarga la pagina o intenta de nuevo mas adelante',
-                    footer: '<a href="">Why do I have this issue?</a>',
+                    footer: '<a href="">Porque estoy Teniendo este problema?</a>',
                     timer: 1500,
                     timerProgressBar: true
                 })

@@ -43,7 +43,6 @@ ul {
 }
 
 p {
-  font-family: "Carter One", cursive;
   margin-top: 0;
   margin-bottom: 0rem;
 }
@@ -401,6 +400,43 @@ p {
     background: #dcfe54;
     box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
     border-radius: 2px;
+  }
+  body .descriptionSecttion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10rem 0 0 0;
+  }
+  body .descriptionSecttion img {
+    height: auto;
+  }
+  body .descriptionSecttion .infoTravel {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  body .descriptionSecttion .infoTravel h2 {
+    font-size: 40px;
+  }
+  body .descriptionSecttion .infoTravel p {
+    margin: 1rem 0 1rem 0;
+  }
+  body .descriptionSecttion .infoTravel form {
+    display: flex;
+    flex-direction: column;
+  }
+  body .descriptionSecttion .infoTravel form div {
+    margin: 1% 0 1% 0;
+  }
+  body .descriptionSecttion .infoTravel form input {
+    width: 30%;
+    align-items: baseline;
+  }
+  body .descriptionSecttion .infoTravel form select {
+    width: 30%;
+  }
+  body .descriptionSecttion .infoTravel form .btnFormCompra {
+    width: 10%;
   }
   body .Thanks {
     display: flex;

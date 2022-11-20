@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Assets/Css/index.css">
+    <title>The Master Tourism</title>
+</head>
+
+<body>
+    <header class="HeaderClass">
+        <section class="HeaderSecction">
+            <div class="HeaderLogo">
+                <img src="../../../Assets/Img/Mi proyecto.png" alt="">
+            </div>
+            <div class="HeaderNav">
+
+                <a href="../../../index.html">Home</a>
+                <a href="../../Servicios.html">Servicios</a>
+                <a href="../../Sobre_Nosotros.html">Sobre Nosotros</a>
+                <a href="../../Contacto.html">Contacto</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="descriptionSecttion">
+        <img src="../../../Assets/Img/FotosDetalles/FloralisGenerica/fotoDescription.png" alt="">
+        <section class="infoTravel">
+            <h2>Paseo por Figueroa Alcorta <br><small>(Floralis Generica, Museo Nacional de Bellas Artes, Paseo
+                    Alcorta)</small></h2>
+            <p>Como parte de el paseo por la Avenida Presidente Figueroa Alcorta les proponemos visitar esta hermosa
+                escultura diseñada por el ingeniero Ángel Gusman, quien fue contratado por Eduardo Catalano.
+                <br>
+                Les proponemos tambien visitar el Museo Nacional de Bellas Artes en donde podran disfrutar de hermosas
+                obras de arte y el Paseo Alcorta, un shopping emblematico de nuestra ciudad, ocupa toda una manzana y
+                esta ubicada en el selecto barrio "Palermo chico"
+            </p>
+            <p>Duracion del tour: 2hr</p>
+            <form action="">
+
+                <div>
+                    <label for="Niños">
+                        Niños
+                    </label>
+                    <select name="Niños" id="Niños" required>
+                        <option value="0">
+                            Selecciona cantidad
+                        </option>
+                        <option value="870">
+                            1x $870
+                        </option>
+                        <option value="1700">
+                            2x $1700
+                        </option>
+                        <option value="2400">
+                            3x $2400
+                        </option>
+                        <option value="3000">
+                            4x $3000
+                        </option>
+                    </select>
+                </div>
+
+                <div> <label for="Adultos">
+                        Adultos
+                    </label>
+                    <select name="Adultos" id="Adultos" required>
+                        <option value="0">
+                            Selecciona cantidad
+                        </option>
+                        <option value="1200">
+                            1x $1200
+                        </option>
+                        <option value="2200">
+                            2x $2200
+                        </option>
+                        <option value="3200">
+                            3x $3200
+                        </option>
+                        <option value="4000">
+                            4x $4000
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="souvenir">
+                        Souvenirs ($1700)
+                    </label>
+                    <input type="checkbox" name="souvenirs" id="souvenirs">
+                </div>
+
+                <div>
+                    <label for="descCode">
+                        <b>Codigo de descuento</b>
+                    </label>
+                    <input type="text" name="descCode" id="descCode">
+                </div>
+
+                <input type="submit" value="Comprar" class="btnFormCompra" id="btnFormCompra">
+            </form>
+        </section>
+    </section>
+    <footer>
+        <div class="Faq">
+
+            © 2022, Master Tourism . Todos los derechos reservados.
+            <br>
+            <a href="https://www.buenosaires.gob.ar/defensaconsumidor/direccion-general" target="_blank"
+                rel="noopener noreferrer"> Dirección Nacional de Defensa del Consumidor - Defensa de
+                las y los Consumidores. Para reclamos ingrese aquí - Dirección General de Defensa y Protección al
+                Consumidor
+                - Información sobre derecho de arrepentimiento</a>
+            <br>
+            <div class="infoContacto"><a href="tel:+0810 111 4235">Para asesoramiento <b>Telefonico</b> comunicarse con
+                    el +0810 111 4235, </a>
+                <a href="mailto:grcarranza@uade.edu.ar">para asesoramiento <b>Via mail</b> grcarranza@uade.edu.ar</a>
+            </div>
+
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../../../Assets/js/FormDeCompra.js"></script>
+        <div class="icons">
+            <img src="../../../Assets/Img/Vectores/Instagram-Positive.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
