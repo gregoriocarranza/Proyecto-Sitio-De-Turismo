@@ -223,6 +223,31 @@ p {
         .informacion {
             grid-area: informacion;
             border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+
+
+            img {
+                width: 99%;
+                height: auto;
+                margin: 0.5rem 0;
+            }
+
+            small {
+                width: 95%;
+                margin: 0 auto;
+                font-size: xx-small;
+                text-align: start;
+            }
+
+            p {
+                width: 99%;
+                height: auto;
+                margin: 0.5rem auto;
+            }
 
         }
 
@@ -408,12 +433,13 @@ p {
             display: flex;
 
             .Hablemos {
-                background: #d0c5fb;
+                background: #223322;
                 border-radius: 0px 12px 12px 0px;
                 display: flex;
                 width: 50%;
                 height: auto;
                 flex-direction: column;
+                box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
             }
 
             h2 {
@@ -426,7 +452,7 @@ p {
                 font-size: 64px;
                 line-height: 77px;
                 text-transform: capitalize;
-                color: #000000;
+                color: #FFFFFF;
             }
 
             p {
@@ -438,7 +464,7 @@ p {
                 font-size: 18px;
                 line-height: 26px;
                 letter-spacing: 0.04em;
-                color: #000000;
+                color: #FFFFFF;
             }
 
             .InfoLink {
@@ -454,11 +480,16 @@ p {
                 font-size: 18px;
                 line-height: 26px;
                 letter-spacing: 0.04em;
-                color: #4f4f4f;
+                color: #CCCCCC;
 
                 img {
                     padding: 5px;
+                    background: white;
+                    border-radius: 16px;
+                    margin: 0 0.5rem 0 0.5rem;
+                    padding: 5px;
                 }
+
             }
 
             .redesDiv {
@@ -470,7 +501,7 @@ p {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background: #f7f7f7;
+                    background: white;
                     height: 32px;
                     width: 32px;
                     border-radius: 16px;

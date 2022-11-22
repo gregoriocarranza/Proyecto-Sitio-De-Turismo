@@ -168,6 +168,26 @@ p {
   body .informacion {
     grid-area: informacion;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  body .informacion img {
+    width: 99%;
+    height: auto;
+    margin: 0.5rem 0;
+  }
+  body .informacion small {
+    width: 95%;
+    margin: 0 auto;
+    font-size: xx-small;
+    text-align: start;
+  }
+  body .informacion p {
+    width: 99%;
+    height: auto;
+    margin: 0.5rem auto;
   }
   body .EntradaDeBlog {
     grid-area: EntradaDeBlog;
@@ -302,12 +322,13 @@ p {
     display: flex;
   }
   body .Contacto .Hablemos {
-    background: #d0c5fb;
+    background: #223322;
     border-radius: 0px 12px 12px 0px;
     display: flex;
     width: 50%;
     height: auto;
     flex-direction: column;
+    box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
   }
   body .Contacto h2 {
     text-align: start;
@@ -319,7 +340,7 @@ p {
     font-size: 64px;
     line-height: 77px;
     text-transform: capitalize;
-    color: #000000;
+    color: #FFFFFF;
   }
   body .Contacto p {
     width: 50%;
@@ -330,7 +351,7 @@ p {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.04em;
-    color: #000000;
+    color: #FFFFFF;
   }
   body .Contacto .InfoLink {
     width: 50%;
@@ -345,9 +366,13 @@ p {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.04em;
-    color: #4f4f4f;
+    color: #CCCCCC;
   }
   body .Contacto .InfoLink img {
+    padding: 5px;
+    background: white;
+    border-radius: 16px;
+    margin: 0 0.5rem 0 0.5rem;
     padding: 5px;
   }
   body .Contacto .redesDiv {
@@ -359,7 +384,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f7f7f7;
+    background: white;
     height: 32px;
     width: 32px;
     border-radius: 16px;
