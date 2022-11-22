@@ -4,17 +4,19 @@
     }
 }
 
+@mixin Tablet {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @content
+    }
+}
+
 @mixin Phone {
     @media screen and (max-width: 767px) {
         @content
     }
 }
 
-@mixin Tablet {
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        @content
-    }
-}
+
 
 * {
     margin: 0px;
@@ -43,6 +45,7 @@ h6 {
     line-height: normal;
     font-size: inherit
 }
+
 
 // ------------------------------------Fuentes
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
@@ -313,21 +316,6 @@ p {
 
                 border-radius: 1rem;
 
-
-
-                a {
-                    display: flex;
-                    background: #2D3648;
-                    border-radius: 6px;
-                    color: white;
-
-                    width: 138px;
-                    height: 48px;
-                    align-items: center;
-                    justify-content: center;
-
-                }
-
                 .imgDiv {
 
                     width: 100%;
@@ -390,6 +378,23 @@ p {
                     text-align: center;
                     font-style: italic;
                     font-size: 30px;
+                }
+
+                .ButtonDiv {
+
+
+                    a {
+                        display: flex;
+                        background: #2D3648;
+                        border-radius: 6px;
+                        color: white;
+
+                        width: 138px;
+                        height: 48px;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
                 }
             }
         }
@@ -718,3 +723,660 @@ p {
         }
     }
 }
+
+@include Tablet {
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+
+    body {
+        margin-bottom: 17rem;
+        background-color: white;
+
+        .TextosTitulo {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+
+            h2 {
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            p {
+                font-weight: 400;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+
+        header {
+            .HeaderSecction {
+                padding: 1rem;
+                display: flex;
+                justify-content: space-between;
+                background-color: #223322;
+                color: white;
+                height: 84px;
+
+
+
+                .HeaderLogo {
+                    display: flex;
+                    width: 45%;
+                    justify-content: center;
+
+                    img {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                }
+
+                .HeaderNav {
+                    display: flex;
+                    width: 45%;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    a:hover {
+                        animation-name: scaler;
+                        animation-duration: 1s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+
+        //    Inicio-------------------------------------------------------
+        .bannerdiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            margin: 1rem 0 1rem 0;
+            // border-top: 1px solid black;
+            // border-bottom: 1px solid black;
+
+            .banderaSides {
+                background-color: lightblue;
+                width: 95%;
+                height: 2rem;
+                margin: auto;
+                // border-left: 1px solid black;
+                // border-right: 1px solid black;
+            }
+
+            .banderaMiddel {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: white;
+                width: 95%;
+                height: 2rem;
+                margin: auto;
+                // border-left: 1px solid black;
+                // border-right: 1px solid black;
+
+                h1 {
+                    font-size: 30px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
+            }
+        }
+
+        .gridInicio {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 1px 1px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "informacion informacion EntradaDeBlog"
+                "informacion informacion EntradaDeBlog"
+                "Carrousel Carrousel EntradaDeBlog"
+                "Carrousel Carrousel EntradaDeBlog";
+            padding: 5px;
+            width: 95%;
+            margin: auto;
+        }
+
+        .informacion {
+            grid-area: informacion;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+
+
+            img {
+                width: 99%;
+                height: auto;
+                margin: 0.5rem 0;
+            }
+
+            small {
+                width: 95%;
+                margin: 0 auto;
+                font-size: xx-small;
+                text-align: start;
+            }
+
+            p {
+                width: 99%;
+                height: auto;
+                margin: 0.5rem auto;
+            }
+
+        }
+
+        .EntradaDeBlog {
+            grid-area: EntradaDeBlog;
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                width: 95%;
+                margin: 1rem auto;
+
+
+                border: 1px solid black;
+
+                section {
+                    padding: 1rem;
+
+                    img {
+                        width: 5rem;
+                        height: auto;
+                    }
+                }
+
+            }
+        }
+
+        .Carrousel {
+            grid-area: Carrousel;
+            border: 1px solid black;
+        }
+
+
+        // Servicios-------------------------------------------------------
+        .CardSecttion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            width: 95%;
+            margin: 1rem auto 0 auto;
+
+
+            .Card {
+                padding: 1rem;
+                margin: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+
+                // background-color: white;
+                box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
+                // min-width: 32rem;
+                // min-height: 35rem;
+
+                border-radius: 1rem;
+
+
+                a {
+                    text-decoration: underline;
+                }
+
+
+                .imgDiv {
+
+                    width: 100%;
+                    height: 13.6rem;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    position: relative;
+
+                    .imgAteneo {
+                        position: absolute;
+                        margin: auto;
+                        left: -100%;
+                        right: -100%;
+                        top: -90%;
+                        bottom: -100%;
+                        max-width: 31rem;
+
+                    }
+
+                    .imgJapones {
+                        position: absolute;
+                        margin: auto;
+                        left: -100%;
+                        right: -100%;
+                        top: -138%;
+                        bottom: -100%;
+                        max-width: 31rem;
+
+                    }
+
+
+                    .imgFlor {
+                        position: absolute;
+                        margin: auto;
+                        left: -100%;
+                        right: -104%;
+                        top: -106%;
+                        bottom: -100%;
+                        max-width: 31rem;
+
+
+                    }
+
+                }
+
+                .Text {
+                    width: 100%;
+                    // min-height: 165px;
+
+
+                    p {
+                        // width: 23rem;
+                        padding: 1rem;
+                        font-size: 16px;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                }
+
+                h4 {
+                    margin: 1rem 0.5rem;
+                    text-align: center;
+                    font-style: italic;
+                    font-size: 30px;
+
+                    a {
+                        text-decoration: underline;
+                        font-size: small;
+                    }
+                }
+
+                .ButtonDiv {
+                    display: none;
+
+                    a {
+                        display: flex;
+                        background: #2D3648;
+                        border-radius: 6px;
+                        color: white;
+
+                        width: 138px;
+                        height: 48px;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                }
+            }
+        }
+
+        .SobreNosotrosDiv {
+
+            margin: auto;
+            width: 90%;
+
+
+            section {
+                margin: 2rem;
+            }
+
+            h3 {
+                font-family: 'Red Hat Mono', monospace;
+                font-weight: bold;
+                font-size: 25px;
+                text-align: start;
+            }
+
+            p {
+                text-align: start;
+                color: black;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                padding: 1rem;
+            }
+
+            .Calificacion {
+                i {
+                    color: yellow;
+                    font-size: 5rem;
+                }
+            }
+        }
+
+        // Contacto-------------------------------------------------------
+
+        .Contacto {
+            display: flex;
+
+            .Hablemos {
+                background: #223322;
+                border-radius: 0px 12px 12px 0px;
+                display: flex;
+                width: 50%;
+                height: auto;
+                // height: 40rem;
+
+                flex-direction: column;
+                box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
+            }
+
+            h2 {
+                padding: 1rem;
+                text-align: start;
+
+
+                font-family: "Bebas Neue";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 77px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+            }
+
+            p {
+                padding: 1rem;
+
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                color: #FFFFFF;
+            }
+
+            .InfoLink {
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px;
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                color: #CCCCCC;
+
+                img {
+                    padding: 5px;
+                    background: white;
+                    border-radius: 16px;
+                    margin: 0 0.5rem 0 0.5rem;
+                    padding: 5px;
+                }
+
+            }
+
+            .redesDiv {
+                display: flex;
+                width: 50%;
+                margin: 42px auto 0 auto;
+
+                .redesCircle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: white;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 16px;
+                    margin: 0px 8px 0px 8px;
+
+                    .Facebook {
+                        height: 16px;
+                        width: 10px;
+                    }
+
+                    .Twiter {
+                        height: 13px;
+                        width: 16px;
+                    }
+
+                    .Instagram {
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 0px;
+                    }
+                }
+
+
+            }
+
+            .FormSection {
+                margin: 1rem auto;
+                width: 50%;
+
+                .FormUser {
+                    display: flex;
+                    flex-direction: column;
+
+                    // width: 100%;
+                    height: auto;
+                    padding: 1rem;
+
+                    label {
+                        font-family: "DM Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        letter-spacing: 0.03em;
+                        color: #29303e;
+
+                        span {
+                            color: #ff0048;
+                        }
+                    }
+
+                    input {
+                        width: 95%;
+                        height: auto;
+
+                        padding: 5px;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -0.25px;
+                        color: #707d86;
+                    }
+
+                    textarea {
+                        width: 95%;
+                        height: auto;
+
+                        padding: 5px;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -0.25px;
+                        color: #707d86;
+                        resize: none;
+                    }
+
+                    select {
+                        height: 35px;
+                        padding: 5px;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -0.25px;
+                        color: #707d86;
+                    }
+
+                    button {
+                        margin: 16px 0 0 0;
+                        border: 0px solid #29303e;
+                        height: 35px;
+                        background: #dcfe54;
+                        box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+                        border-radius: 2px;
+                    }
+                }
+            }
+
+
+        }
+
+        // Descripciones-------------------------------------------------------
+        .descriptionSecttion {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            margin: 5rem 0 0 0;
+
+            // position: absolute;
+
+            img {
+                position: relative;
+                left: 8%;
+                top: 1%;
+                width: 51%;
+                height: 50%;
+                z-index: -1;
+            }
+
+            .infoTravel {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                background: white;
+
+                padding: 1rem;
+
+                h2 {
+                    font-size: 40px;
+                    small{
+                        font-size: x-small;
+                        
+                    }
+                }
+
+                p {
+                    margin: 1rem 0 1rem 0;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    div {
+                        margin: 1% 0 1% 0;
+                    }
+
+                    input {
+                        width: 50%;
+                        align-items: baseline;
+                    }
+
+                    select {
+                        width: 100%;
+                    }
+
+                    .btnFormCompra {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+
+        .Thanks {
+            display: flex;
+            flex-direction: column;
+
+
+            a {
+                display: flex;
+                background: #2D3648;
+                border-radius: 6px;
+                color: white;
+
+                width: 138px;
+                height: 48px;
+                align-items: center;
+                justify-content: center;
+
+                margin-top: 1rem;
+
+            }
+        }
+
+
+
+
+
+
+
+        footer {
+            color: white;
+            background-color: #223322;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            // height: 6rem;
+
+
+            .Faq {
+                width: 85%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 1rem;
+                text-align: start;
+                line-height: 25px;
+            }
+
+            .icons {
+                width: 10%;
+                display: flex;
+                justify-content: flex-end;
+                margin: 1rem;
+
+                img {
+                    width: 25%;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+}
+

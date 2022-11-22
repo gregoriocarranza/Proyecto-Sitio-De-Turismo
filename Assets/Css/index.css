@@ -234,16 +234,6 @@ p {
     min-height: 35rem;
     border-radius: 1rem;
   }
-  body .CardSecttion .Card a {
-    display: flex;
-    background: #2D3648;
-    border-radius: 6px;
-    color: white;
-    width: 138px;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-  }
   body .CardSecttion .Card .imgDiv {
     width: 100%;
     height: 10.6rem;
@@ -293,6 +283,16 @@ p {
     text-align: center;
     font-style: italic;
     font-size: 30px;
+  }
+  body .CardSecttion .Card .ButtonDiv a {
+    display: flex;
+    background: #2D3648;
+    border-radius: 6px;
+    color: white;
+    width: 138px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
   }
   body .SobreNosotrosDiv {
     margin: auto;
@@ -503,6 +503,496 @@ p {
   }
   body .descriptionSecttion .infoTravel form .btnFormCompra {
     width: 10%;
+  }
+  body .Thanks {
+    display: flex;
+    flex-direction: column;
+  }
+  body .Thanks a {
+    display: flex;
+    background: #2D3648;
+    border-radius: 6px;
+    color: white;
+    width: 138px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  body footer {
+    color: white;
+    background-color: #223322;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  body footer .Faq {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: start;
+    line-height: 25px;
+  }
+  body footer .icons {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+  }
+  body footer .icons img {
+    width: 25%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  body {
+    margin-bottom: 17rem;
+    background-color: white;
+  }
+  body .TextosTitulo {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  body .TextosTitulo h2 {
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  body .TextosTitulo p {
+    font-weight: 400;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  body header .HeaderSecction {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #223322;
+    color: white;
+    height: 84px;
+  }
+  body header .HeaderSecction .HeaderLogo {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+  }
+  body header .HeaderSecction .HeaderLogo img {
+    width: 6rem;
+    height: 6rem;
+  }
+  body header .HeaderSecction .HeaderNav {
+    display: flex;
+    width: 45%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body header .HeaderSecction .HeaderNav a:hover {
+    animation-name: scaler;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  body .bannerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+  body .bannerdiv .banderaSides {
+    background-color: lightblue;
+    width: 95%;
+    height: 2rem;
+    margin: auto;
+  }
+  body .bannerdiv .banderaMiddel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 95%;
+    height: 2rem;
+    margin: auto;
+  }
+  body .bannerdiv .banderaMiddel h1 {
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  body .gridInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas: "informacion informacion EntradaDeBlog" "informacion informacion EntradaDeBlog" "Carrousel Carrousel EntradaDeBlog" "Carrousel Carrousel EntradaDeBlog";
+    padding: 5px;
+    width: 95%;
+    margin: auto;
+  }
+  body .informacion {
+    grid-area: informacion;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  body .informacion img {
+    width: 99%;
+    height: auto;
+    margin: 0.5rem 0;
+  }
+  body .informacion small {
+    width: 95%;
+    margin: 0 auto;
+    font-size: xx-small;
+    text-align: start;
+  }
+  body .informacion p {
+    width: 99%;
+    height: auto;
+    margin: 0.5rem auto;
+  }
+  body .EntradaDeBlog {
+    grid-area: EntradaDeBlog;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  body .EntradaDeBlog div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin: 1rem auto;
+    border: 1px solid black;
+  }
+  body .EntradaDeBlog div section {
+    padding: 1rem;
+  }
+  body .EntradaDeBlog div section img {
+    width: 5rem;
+    height: auto;
+  }
+  body .Carrousel {
+    grid-area: Carrousel;
+    border: 1px solid black;
+  }
+  body .CardSecttion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 1rem auto 0 auto;
+  }
+  body .CardSecttion .Card {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
+    border-radius: 1rem;
+  }
+  body .CardSecttion .Card a {
+    text-decoration: underline;
+  }
+  body .CardSecttion .Card .imgDiv {
+    width: 100%;
+    height: 13.6rem;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+  }
+  body .CardSecttion .Card .imgDiv .imgAteneo {
+    position: absolute;
+    margin: auto;
+    left: -100%;
+    right: -100%;
+    top: -90%;
+    bottom: -100%;
+    max-width: 31rem;
+  }
+  body .CardSecttion .Card .imgDiv .imgJapones {
+    position: absolute;
+    margin: auto;
+    left: -100%;
+    right: -100%;
+    top: -138%;
+    bottom: -100%;
+    max-width: 31rem;
+  }
+  body .CardSecttion .Card .imgDiv .imgFlor {
+    position: absolute;
+    margin: auto;
+    left: -100%;
+    right: -104%;
+    top: -106%;
+    bottom: -100%;
+    max-width: 31rem;
+  }
+  body .CardSecttion .Card .Text {
+    width: 100%;
+  }
+  body .CardSecttion .Card .Text p {
+    padding: 1rem;
+    font-size: 16px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  body .CardSecttion .Card h4 {
+    margin: 1rem 0.5rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+  }
+  body .CardSecttion .Card h4 a {
+    text-decoration: underline;
+    font-size: small;
+  }
+  body .CardSecttion .Card .ButtonDiv {
+    display: none;
+  }
+  body .CardSecttion .Card .ButtonDiv a {
+    display: flex;
+    background: #2D3648;
+    border-radius: 6px;
+    color: white;
+    width: 138px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+  }
+  body .SobreNosotrosDiv {
+    margin: auto;
+    width: 90%;
+  }
+  body .SobreNosotrosDiv section {
+    margin: 2rem;
+  }
+  body .SobreNosotrosDiv h3 {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+  }
+  body .SobreNosotrosDiv p {
+    text-align: start;
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    padding: 1rem;
+  }
+  body .SobreNosotrosDiv .Calificacion i {
+    color: yellow;
+    font-size: 5rem;
+  }
+  body .Contacto {
+    display: flex;
+  }
+  body .Contacto .Hablemos {
+    background: #223322;
+    border-radius: 0px 12px 12px 0px;
+    display: flex;
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
+  }
+  body .Contacto h2 {
+    padding: 1rem;
+    text-align: start;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  body .Contacto p {
+    padding: 1rem;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+  body .Contacto .InfoLink {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #CCCCCC;
+  }
+  body .Contacto .InfoLink img {
+    padding: 5px;
+    background: white;
+    border-radius: 16px;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 5px;
+  }
+  body .Contacto .redesDiv {
+    display: flex;
+    width: 50%;
+    margin: 42px auto 0 auto;
+  }
+  body .Contacto .redesDiv .redesCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    margin: 0px 8px 0px 8px;
+  }
+  body .Contacto .redesDiv .redesCircle .Facebook {
+    height: 16px;
+    width: 10px;
+  }
+  body .Contacto .redesDiv .redesCircle .Twiter {
+    height: 13px;
+    width: 16px;
+  }
+  body .Contacto .redesDiv .redesCircle .Instagram {
+    height: 16px;
+    width: 16px;
+    border-radius: 0px;
+  }
+  body .Contacto .FormSection {
+    margin: 1rem auto;
+    width: 50%;
+  }
+  body .Contacto .FormSection .FormUser {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  body .Contacto .FormSection .FormUser label {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #29303e;
+  }
+  body .Contacto .FormSection .FormUser label span {
+    color: #ff0048;
+  }
+  body .Contacto .FormSection .FormUser input {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #707d86;
+  }
+  body .Contacto .FormSection .FormUser textarea {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #707d86;
+    resize: none;
+  }
+  body .Contacto .FormSection .FormUser select {
+    height: 35px;
+    padding: 5px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #707d86;
+  }
+  body .Contacto .FormSection .FormUser button {
+    margin: 16px 0 0 0;
+    border: 0px solid #29303e;
+    height: 35px;
+    background: #dcfe54;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    border-radius: 2px;
+  }
+  body .descriptionSecttion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5rem 0 0 0;
+  }
+  body .descriptionSecttion img {
+    position: relative;
+    left: 8%;
+    top: 1%;
+    width: 51%;
+    height: 50%;
+    z-index: -1;
+  }
+  body .descriptionSecttion .infoTravel {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: white;
+    padding: 1rem;
+  }
+  body .descriptionSecttion .infoTravel h2 {
+    font-size: 40px;
+  }
+  body .descriptionSecttion .infoTravel h2 small {
+    font-size: x-small;
+  }
+  body .descriptionSecttion .infoTravel p {
+    margin: 1rem 0 1rem 0;
+  }
+  body .descriptionSecttion .infoTravel form {
+    display: flex;
+    flex-direction: column;
+  }
+  body .descriptionSecttion .infoTravel form div {
+    margin: 1% 0 1% 0;
+  }
+  body .descriptionSecttion .infoTravel form input {
+    width: 50%;
+    align-items: baseline;
+  }
+  body .descriptionSecttion .infoTravel form select {
+    width: 100%;
+  }
+  body .descriptionSecttion .infoTravel form .btnFormCompra {
+    width: 20%;
   }
   body .Thanks {
     display: flex;
