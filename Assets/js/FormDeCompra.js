@@ -7,7 +7,7 @@ const formSouvenir = document.getElementById("souvenirs");
 const formCode = document.getElementById("descCode");
 
 
-const codes = ["ArgentinaCampeon2022", "Verano2022", "PorUn2023SinCovid"]
+const codes = ["ARGENTINACAMPEO2022", "VERANO2022", "PORUN2023SINCOVID", "JUBILADOS2022"]
 btnFOrm.onclick = (e) => {
     e.preventDefault()
 
