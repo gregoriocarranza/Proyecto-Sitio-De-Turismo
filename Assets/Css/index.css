@@ -508,6 +508,7 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
   body .descriptionSecttion img {
     width: 40%;
     height: auto;
+    margin: auto 0;
     border-radius: 2rem;
   }
   body .descriptionSecttion .infoTravel {
