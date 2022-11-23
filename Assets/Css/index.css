@@ -503,10 +503,12 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 10rem 0 0 0;
+    margin: 5rem 0 0 0;
   }
   body .descriptionSecttion img {
+    width: 40%;
     height: auto;
+    border-radius: 2rem;
   }
   body .descriptionSecttion .infoTravel {
     display: flex;
@@ -1020,12 +1022,11 @@ body header .respmenu nav .MenuNot_phone li:hover {
     margin: 5rem 0 0 0;
   }
   body .descriptionSecttion img {
-    position: relative;
-    left: 8%;
-    top: 1%;
-    width: 51%;
+    margin: auto 0;
+    width: 43%;
     height: 50%;
     z-index: -1;
+    border-radius: 2rem;
   }
   body .descriptionSecttion .infoTravel {
     display: flex;
