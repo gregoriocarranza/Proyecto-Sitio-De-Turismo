@@ -113,7 +113,7 @@ p {
     }
 
     body {
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         background-color: white;
 
         .TextosTitulo {
@@ -408,10 +408,17 @@ p {
                 }
 
                 h4 {
-                    margin: 1rem 0 1rem 0;
+                    margin: 1rem 0.5rem;
                     text-align: center;
                     font-style: italic;
                     font-size: 30px;
+
+                    a {
+                        text-decoration: underline;
+                        font-size: small;
+                        display: none;
+                        
+                    }
                 }
 
                 .ButtonDiv {
@@ -1015,9 +1022,7 @@ p {
                 border-radius: 1rem;
 
 
-                a {
-                    text-decoration: underline;
-                }
+      
 
 
                 .imgDiv {
@@ -1087,6 +1092,7 @@ p {
                     a {
                         text-decoration: underline;
                         font-size: small;
+
                     }
                 }
 
@@ -1103,6 +1109,8 @@ p {
                         height: 48px;
                         align-items: center;
                         justify-content: center;
+
+                        
 
                     }
                 }
@@ -1850,6 +1858,8 @@ p {
                     }
                 }
 
+                
+
                 .ButtonDiv {
                     display: none;
 
@@ -1927,7 +1937,7 @@ p {
                 font-family: "Bebas Neue";
                 font-style: normal;
                 font-weight: 400;
-                font-size: 64px;
+                font-size: 40px;
                 line-height: 77px;
                 text-transform: capitalize;
                 color: #FFFFFF;
@@ -1940,7 +1950,7 @@ p {
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
-                line-height: 26px;
+                line-height: 20px;
                 letter-spacing: 0.04em;
                 color: #FFFFFF;
             }
@@ -1954,7 +1964,7 @@ p {
                 font-family: "DM Sans";
                 font-style: normal;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 12px;
                 line-height: 26px;
                 letter-spacing: 0.04em;
                 color: #CCCCCC;
@@ -1979,10 +1989,10 @@ p {
                     align-items: center;
                     justify-content: center;
                     background: white;
-                    height: 32px;
-                    width: 32px;
+                    height: 24px;
+                    width: 24px;
                     border-radius: 16px;
-                    margin: 0px 8px 0px 8px;
+                    margin: 0px 3px 0px 3px;
 
                     .Facebook {
                         height: 16px;
