@@ -1135,10 +1135,6 @@ body header .respmenu nav .MenuNot_phone li:hover {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     margin: 1rem 0;
   }
-  body header {
-    /* ---------- MenuHamburguesa ---------- */
-    /* ----------------------------------------------- */
-  }
   body header .HeaderSecction {
     padding: 1rem;
     display: flex;
