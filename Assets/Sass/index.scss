@@ -113,7 +113,7 @@ p {
     }
 
     body {
-        margin-bottom: 15%;
+        margin-bottom: 22%;
         background-color: white;
 
         .TextosTitulo {
@@ -750,13 +750,16 @@ p {
                 padding: 1rem;
                 text-align: start;
                 line-height: 25px;
+
+                .InfoAlumnos {
+                    font-size: small;
+                }
             }
 
             .icons {
                 width: 10%;
                 display: flex;
-                justify-content: flex-end;
-                margin: 1rem;
+                justify-content: center;
 
                 img {
                     width: 25%;
@@ -1455,13 +1458,19 @@ p {
                 padding: 1rem;
                 text-align: start;
                 line-height: 25px;
+
+                .InfoAlumnos {
+                    font-size: small;
+                }
             }
 
             .icons {
                 width: 10%;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
                 margin: 1rem;
+
+                display: none;
 
                 img {
                     width: 25%;
@@ -1922,14 +1931,17 @@ p {
 
         .Contacto {
             display: flex;
+            flex-direction: column;
+
 
             .Hablemos {
                 background: #223322;
-                border-radius: 0px 12px 12px 0px;
+                border-radius: 12px;
                 display: flex;
-                width: 50%;
+                width: 95%;
+                margin: auto;
                 height: auto;
-                // height: 40rem;
+                padding-bottom: 1rem;
 
                 flex-direction: column;
                 box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
@@ -1988,7 +2000,9 @@ p {
             .redesDiv {
                 display: flex;
                 width: 50%;
-                margin: 42px auto 0 auto;
+                justify-content: center;
+
+                margin: auto;
 
                 .redesCircle {
                     display: flex;
@@ -2022,7 +2036,7 @@ p {
 
             .FormSection {
                 margin: 1rem auto;
-                width: 50%;
+                width: 90%;
 
                 .FormUser {
                     display: flex;
@@ -2218,6 +2232,10 @@ p {
                 padding: 1rem;
                 text-align: start;
                 line-height: 25px;
+
+                .InfoAlumnos {
+                    font-size: small;
+                }
             }
 
             .icons {

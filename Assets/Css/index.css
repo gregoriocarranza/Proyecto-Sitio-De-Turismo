@@ -84,7 +84,7 @@ p {
   }
 
   body {
-    margin-bottom: 15%;
+    margin-bottom: 22%;
     background-color: white;
   }
   body .TextosTitulo {
@@ -575,11 +575,13 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
     text-align: start;
     line-height: 25px;
   }
+  body footer .Faq .InfoAlumnos {
+    font-size: small;
+  }
   body footer .icons {
     width: 10%;
     display: flex;
-    justify-content: flex-end;
-    margin: 1rem;
+    justify-content: center;
   }
   body footer .icons img {
     width: 25%;
@@ -1098,11 +1100,15 @@ body header .respmenu nav .MenuNot_phone li:hover {
     text-align: start;
     line-height: 25px;
   }
+  body footer .Faq .InfoAlumnos {
+    font-size: small;
+  }
   body footer .icons {
     width: 10%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 1rem;
+    display: none;
   }
   body footer .icons img {
     width: 25%;
@@ -1436,13 +1442,16 @@ body header .respmenu .fa-times {
   }
   body .Contacto {
     display: flex;
+    flex-direction: column;
   }
   body .Contacto .Hablemos {
     background: #223322;
-    border-radius: 0px 12px 12px 0px;
+    border-radius: 12px;
     display: flex;
-    width: 50%;
+    width: 95%;
+    margin: auto;
     height: auto;
+    padding-bottom: 1rem;
     flex-direction: column;
     box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
   }
@@ -1491,7 +1500,8 @@ body header .respmenu .fa-times {
   body .Contacto .redesDiv {
     display: flex;
     width: 50%;
-    margin: 42px auto 0 auto;
+    justify-content: center;
+    margin: auto;
   }
   body .Contacto .redesDiv .redesCircle {
     display: flex;
@@ -1518,7 +1528,7 @@ body header .respmenu .fa-times {
   }
   body .Contacto .FormSection {
     margin: 1rem auto;
-    width: 50%;
+    width: 90%;
   }
   body .Contacto .FormSection .FormUser {
     display: flex;
@@ -1665,6 +1675,9 @@ body header .respmenu .fa-times {
     padding: 1rem;
     text-align: start;
     line-height: 25px;
+  }
+  body footer .Faq .InfoAlumnos {
+    font-size: small;
   }
   body footer .icons {
     width: 10%;
