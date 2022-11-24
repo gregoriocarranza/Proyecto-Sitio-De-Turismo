@@ -358,7 +358,7 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
   }
   body .SobreNosotrosDiv .Calificacion i {
     color: yellow;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide {
     display: flex;
@@ -911,7 +911,7 @@ body header .respmenu nav .MenuNot_phone li:hover {
   }
   body .SobreNosotrosDiv .Calificacion i {
     color: yellow;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide {
     display: flex;
@@ -1500,7 +1500,7 @@ body header .respmenu .fa-times {
   body .SobreNosotrosDiv .TituloDeNosotros {
     font-family: "Red Hat Mono", monospace;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     text-align: start;
   }
   body .SobreNosotrosDiv p {
@@ -1512,7 +1512,7 @@ body header .respmenu .fa-times {
   }
   body .SobreNosotrosDiv .Calificacion i {
     color: yellow;
-    font-size: 5rem;
+    font-size: 2rem;
   }
   body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide {
     display: flex !important;
