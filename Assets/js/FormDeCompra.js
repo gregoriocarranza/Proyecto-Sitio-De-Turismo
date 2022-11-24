@@ -1,4 +1,3 @@
-
 const btnFOrm = document.getElementById("btnFormCompra");
 
 const formNinios = document.getElementById("Niños");
@@ -14,12 +13,42 @@ btnFOrm.onclick = (e) => {
     FormRegistro()
 }
 
+const CalcularTotal = () => {
+    let NINIOS = parseInt(formNinios.value)
+    let ADULTOS = parseInt(formAdultos.value)
+    let SOUVENIR = formSouvenir.checked
+    let CODE = formCode.value
+
+    let TOTAL2 = NINIOS + ADULTOS
+
+    if (SOUVENIR) {
+        TOTAL2 += 1700
+    }
+
+    codes.forEach(a => {
+        // console.log(a);
+        if (CODE == a) {
+            if (a == "JUBILADOS2022") {
+                let TODISCOUNT = TOTAL2 * 0.40
+                TOTAL2 -= TODISCOUNT
+            } else {
+                let TODISCOUNT = TOTAL2 * 0.20
+                TOTAL2 -= TODISCOUNT
+            }
+
+        }
+    });
+
+    // console.log(TOTAL2);
+
+    document.getElementById("Total").innerHTML = "<p> Tu Total es de: $" + TOTAL2 + "</p>"
+}
+
 const variablesA0 = () => {
     formNinios.value = ""
     formAdultos.value = ""
     formSouvenir.value = ""
     formCode.value = ""
-
 }
 
 
@@ -38,6 +67,7 @@ const FormRegistro = (e) => {
 
     if (NINIOS == 0 && ADULTOS == 0) {
         console.log("NO AS SELECCIONADO NINGUNA ENTRADA");
+
         Swal.fire({
             icon: 'error',
             title: 'Debes seleccionar al menos una entrada',
@@ -45,7 +75,9 @@ const FormRegistro = (e) => {
             timer: 3000,
             timerProgressBar: true
         })
+
     } else if (NINIOS != 0 && ADULTOS == 0) {
+
         Swal.fire({
             icon: 'error',
             title: 'Debe haber un adulto acompañando a los niños, porfavor selecciona una entrada para adultos',
@@ -53,6 +85,7 @@ const FormRegistro = (e) => {
             timer: 3000,
             timerProgressBar: true
         })
+
     } else {
         let TOTAL = NINIOS + ADULTOS
 
@@ -61,10 +94,16 @@ const FormRegistro = (e) => {
         }
 
         codes.forEach(a => {
-            console.log(a);
+            // console.log(a);
             if (CODE == a) {
-                let TODISCOUNT = TOTAL * 0.20
-                TOTAL -= TODISCOUNT
+                if (a == "JUBILADOS2022") {
+                    let TODISCOUNT = TOTAL * 0.40
+                    TOTAL -= TODISCOUNT
+                } else {
+                    let TODISCOUNT = TOTAL * 0.20
+                    TOTAL -= TODISCOUNT
+                }
+
             }
         });
         console.log("El total a pagar es de: ", TOTAL);
@@ -78,8 +117,16 @@ const FormRegistro = (e) => {
             timer: 10000,
             timerProgressBar: true
         })
+
     }
 
 
 
 }
+
+
+
+formNinios.onchange = CalcularTotal;
+formAdultos.onchange = CalcularTotal;
+formSouvenir.onchange = CalcularTotal;
+formCode.onchange = CalcularTotal;

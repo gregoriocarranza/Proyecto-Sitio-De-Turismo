@@ -45,6 +45,7 @@ const FormRegistro = (e) => {
             timerProgressBar: true
         })
     } else if (SUBJECT == "") {
+
         Swal.fire({
             icon: 'error',
             title: 'Debes seleccionar un Servicio por el cual consultar',
@@ -54,6 +55,7 @@ const FormRegistro = (e) => {
         })
 
     } else {
+        
         fetch("https://formsubmit.co/ajax/68727c6a182fbe5331d81eb3e805e9a6", {
             method: "POST",
             headers: {
