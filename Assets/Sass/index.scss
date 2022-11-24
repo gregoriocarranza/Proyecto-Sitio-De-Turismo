@@ -295,6 +295,10 @@ p {
             display: flex;
             flex-direction: column;
 
+            .BlogTittle {
+                text-align: center;
+            }
+
             div {
                 display: flex;
                 flex-direction: row;
@@ -435,6 +439,9 @@ p {
                         align-items: center;
                         justify-content: center;
 
+
+                        padding: 0.5rem;
+
                     }
                 }
             }
@@ -442,7 +449,7 @@ p {
 
         .SobreNosotrosDiv {
 
-            margin: auto;
+            margin: 2rem auto;
             width: 90%;
 
 
@@ -450,7 +457,14 @@ p {
                 margin: 2rem;
             }
 
-            h3 {
+            h1 {
+                font-family: 'Red Hat Mono', monospace;
+                font-weight: bold;
+                font-size: 25px;
+                text-align: start;
+            }
+
+            .TituloDeNosotros {
                 font-family: 'Red Hat Mono', monospace;
                 font-weight: bold;
                 font-size: 25px;
@@ -471,6 +485,39 @@ p {
                     font-size: 5rem;
                 }
             }
+
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .Encabezado {
+                            display: flex;
+                            justify-content: flex-start;
+                            margin: 0.5rem;
+
+                            img {
+                                border-radius: 1rem;
+                            }
+
+                            .Titulo {
+                                font-family: 'Red Hat Mono', monospace;
+                                font-weight: bold;
+                                font-size: 25px;
+                                text-align: start;
+                            }
+                        }
+
+
+                        .Testimonio {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
         }
 
         // Contacto-------------------------------------------------------
@@ -488,7 +535,7 @@ p {
                 box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
             }
 
-            h2 {
+            h1 {
                 text-align: start;
                 width: 50%;
                 margin: 151px auto 0 auto;
@@ -667,7 +714,7 @@ p {
                 flex-direction: column;
                 width: 50%;
 
-                h2 {
+                h1 {
                     font-size: 40px;
                 }
 
@@ -972,6 +1019,10 @@ p {
             display: flex;
             flex-direction: column;
 
+            .BlogTittle {
+                text-align: center;
+            }
+
             div {
                 display: flex;
                 flex-direction: row;
@@ -1116,7 +1167,7 @@ p {
                         align-items: center;
                         justify-content: center;
 
-
+                        padding: 0.5rem;
 
                     }
                 }
@@ -1125,7 +1176,7 @@ p {
 
         .SobreNosotrosDiv {
 
-            margin: auto;
+            margin: 2rem auto;
             width: 90%;
 
 
@@ -1133,7 +1184,14 @@ p {
                 margin: 2rem;
             }
 
-            h3 {
+            h1 {
+                font-family: 'Red Hat Mono', monospace;
+                font-weight: bold;
+                font-size: 25px;
+                text-align: start;
+            }
+
+            .TituloDeNosotros {
                 font-family: 'Red Hat Mono', monospace;
                 font-weight: bold;
                 font-size: 25px;
@@ -1152,6 +1210,40 @@ p {
                 i {
                     color: yellow;
                     font-size: 5rem;
+                }
+            }
+
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        // width: 50% !important;
+                        .Encabezado {
+                            display: flex;
+                            justify-content: flex-start;
+                            margin: 0.5rem;
+
+                            img {
+                                border-radius: 1rem;
+                            }
+
+                            .Titulo {
+                                font-family: 'Red Hat Mono', monospace;
+                                font-weight: bold;
+                                font-size: 25px;
+                                text-align: start;
+                            }
+                        }
+
+
+                        .Testimonio {
+                            width: 80%;
+                        }
+                    }
                 }
             }
         }
@@ -1173,7 +1265,7 @@ p {
                 box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
             }
 
-            h2 {
+            h1 {
                 padding: 1rem;
                 text-align: start;
 
@@ -1370,7 +1462,7 @@ p {
 
                 padding: 1rem;
 
-                h2 {
+                h1 {
                     font-size: 40px;
 
                     small {
@@ -1737,9 +1829,10 @@ p {
             margin: 1rem 0;
             border-top: 1px solid black;
 
-            h4 {
+            .BlogTittle {
                 font-size: larger;
                 font-weight: 800;
+                text-align: center;
             }
 
             div {
@@ -1888,15 +1981,15 @@ p {
                         height: 48px;
                         align-items: center;
                         justify-content: center;
-
+                        padding: 0.5rem;
                     }
                 }
             }
         }
 
         .SobreNosotrosDiv {
+            margin: 2rem auto;
 
-            margin: auto;
             width: 90%;
 
 
@@ -1904,7 +1997,14 @@ p {
                 margin: 2rem;
             }
 
-            h3 {
+            h1 {
+                font-family: 'Red Hat Mono', monospace;
+                font-weight: bold;
+                font-size: 25px;
+                text-align: start;
+            }
+
+            .TituloDeNosotros {
                 font-family: 'Red Hat Mono', monospace;
                 font-weight: bold;
                 font-size: 25px;
@@ -1923,6 +2023,44 @@ p {
                 i {
                     color: yellow;
                     font-size: 5rem;
+                }
+            }
+
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .Encabezado {
+                            display: flex;
+                            justify-content: flex-start;
+                            margin: 0.5rem;
+
+                            img {
+                                border-radius: 1rem;
+                            }
+
+                            .Titulo {
+                                font-family: 'Red Hat Mono', monospace;
+                                font-weight: bold;
+                                font-size: 25px;
+                                text-align: start;
+                            }
+                        }
+
+
+                        .Testimonio {}
+                    
+                    }
+                }
+                .swiper-button-prev{
+                    display: none;
+                }
+                .swiper-button-next{
+                    display: none;
                 }
             }
         }
@@ -1947,7 +2085,7 @@ p {
                 box-shadow: 0 24px 64px rgb(45 48 58 / 15%);
             }
 
-            h2 {
+            h1 {
                 padding: 1rem;
                 text-align: start;
 
@@ -2144,7 +2282,7 @@ p {
 
                 padding: 1rem;
 
-                h2 {
+                h1 {
                     font-size: 40px;
 
                     small {

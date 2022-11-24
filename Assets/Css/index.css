@@ -222,6 +222,9 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
     display: flex;
     flex-direction: column;
   }
+  body .EntradaDeBlog .BlogTittle {
+    text-align: center;
+  }
   body .EntradaDeBlog div {
     display: flex;
     flex-direction: row;
@@ -325,15 +328,22 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
     height: 48px;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem;
   }
   body .SobreNosotrosDiv {
-    margin: auto;
+    margin: 2rem auto;
     width: 90%;
   }
   body .SobreNosotrosDiv section {
     margin: 2rem;
   }
-  body .SobreNosotrosDiv h3 {
+  body .SobreNosotrosDiv h1 {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+  }
+  body .SobreNosotrosDiv .TituloDeNosotros {
     font-family: "Red Hat Mono", monospace;
     font-weight: bold;
     font-size: 25px;
@@ -350,6 +360,29 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
     color: yellow;
     font-size: 5rem;
   }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5rem;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado img {
+    border-radius: 1rem;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado .Titulo {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Testimonio {
+    width: 60%;
+  }
   body .Contacto {
     display: flex;
   }
@@ -362,7 +395,7 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
     flex-direction: column;
     box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
   }
-  body .Contacto h2 {
+  body .Contacto h1 {
     text-align: start;
     width: 50%;
     margin: 151px auto 0 auto;
@@ -516,7 +549,7 @@ body header .HeaderSecction .respmenu nav .MenuNot_phone li:hover {
     flex-direction: column;
     width: 50%;
   }
-  body .descriptionSecttion .infoTravel h2 {
+  body .descriptionSecttion .infoTravel h1 {
     font-size: 40px;
   }
   body .descriptionSecttion .infoTravel p {
@@ -744,6 +777,9 @@ body header .respmenu nav .MenuNot_phone li:hover {
     display: flex;
     flex-direction: column;
   }
+  body .EntradaDeBlog .BlogTittle {
+    text-align: center;
+  }
   body .EntradaDeBlog div {
     display: flex;
     flex-direction: row;
@@ -845,15 +881,22 @@ body header .respmenu nav .MenuNot_phone li:hover {
     height: 48px;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem;
   }
   body .SobreNosotrosDiv {
-    margin: auto;
+    margin: 2rem auto;
     width: 90%;
   }
   body .SobreNosotrosDiv section {
     margin: 2rem;
   }
-  body .SobreNosotrosDiv h3 {
+  body .SobreNosotrosDiv h1 {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+  }
+  body .SobreNosotrosDiv .TituloDeNosotros {
     font-family: "Red Hat Mono", monospace;
     font-weight: bold;
     font-size: 25px;
@@ -870,6 +913,29 @@ body header .respmenu nav .MenuNot_phone li:hover {
     color: yellow;
     font-size: 5rem;
   }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5rem;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado img {
+    border-radius: 1rem;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado .Titulo {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Testimonio {
+    width: 80%;
+  }
   body .Contacto {
     display: flex;
   }
@@ -882,7 +948,7 @@ body header .respmenu nav .MenuNot_phone li:hover {
     flex-direction: column;
     box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
   }
-  body .Contacto h2 {
+  body .Contacto h1 {
     padding: 1rem;
     text-align: start;
     font-family: "Bebas Neue";
@@ -1038,10 +1104,10 @@ body header .respmenu nav .MenuNot_phone li:hover {
     background: white;
     padding: 1rem;
   }
-  body .descriptionSecttion .infoTravel h2 {
+  body .descriptionSecttion .infoTravel h1 {
     font-size: 40px;
   }
-  body .descriptionSecttion .infoTravel h2 small {
+  body .descriptionSecttion .infoTravel h1 small {
     font-size: x-small;
   }
   body .descriptionSecttion .infoTravel p {
@@ -1307,9 +1373,10 @@ body header .respmenu .fa-times {
     margin: 1rem 0;
     border-top: 1px solid black;
   }
-  body .EntradaDeBlog h4 {
+  body .EntradaDeBlog .BlogTittle {
     font-size: larger;
     font-weight: 800;
+    text-align: center;
   }
   body .EntradaDeBlog div {
     display: flex;
@@ -1415,15 +1482,22 @@ body header .respmenu .fa-times {
     height: 48px;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem;
   }
   body .SobreNosotrosDiv {
-    margin: auto;
+    margin: 2rem auto;
     width: 90%;
   }
   body .SobreNosotrosDiv section {
     margin: 2rem;
   }
-  body .SobreNosotrosDiv h3 {
+  body .SobreNosotrosDiv h1 {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+  }
+  body .SobreNosotrosDiv .TituloDeNosotros {
     font-family: "Red Hat Mono", monospace;
     font-weight: bold;
     font-size: 25px;
@@ -1440,6 +1514,32 @@ body header .respmenu .fa-times {
     color: yellow;
     font-size: 5rem;
   }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5rem;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado img {
+    border-radius: 1rem;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-wrapper .swiper-slide .Encabezado .Titulo {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-button-prev {
+    display: none;
+  }
+  body .SobreNosotrosDiv .swiper .swiper-button-next {
+    display: none;
+  }
   body .Contacto {
     display: flex;
     flex-direction: column;
@@ -1455,7 +1555,7 @@ body header .respmenu .fa-times {
     flex-direction: column;
     box-shadow: 0 24px 64px rgba(45, 48, 58, 0.15);
   }
-  body .Contacto h2 {
+  body .Contacto h1 {
     padding: 1rem;
     text-align: start;
     font-family: "Bebas Neue";
@@ -1614,10 +1714,10 @@ body header .respmenu .fa-times {
     background: white;
     padding: 1rem;
   }
-  body .descriptionSecttion .infoTravel h2 {
+  body .descriptionSecttion .infoTravel h1 {
     font-size: 40px;
   }
-  body .descriptionSecttion .infoTravel h2 small {
+  body .descriptionSecttion .infoTravel h1 small {
     font-size: x-small;
   }
   body .descriptionSecttion .infoTravel p {
